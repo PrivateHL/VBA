@@ -1,0 +1,43 @@
+'规定变量必须申明，才能使用
+Option Explicit
+
+'禁止/允许弹出警示窗口，新建删除的时候避免弹出提示框
+Application.DispalyAlerts = false/true 
+
+'立即debug运行窗口输出
+Debug.Print 
+
+'计算工作表已经使用的行数, CountA工作表函数
+Application.CountA(Range("a:a"))
+Application.CountA(Columns(1))
+'计算工作表已经使用的列数
+Application.CountA(Range("1:1"))
+Application.CountA(Rows(1)))
+
+'Range嵌套Cell对象或者Range对象，进行区域选取
+Range（Cell, Cell）
+Range (Range, Range)
+
+'数字列号转化为字符列号 Chr
+Chr(64+i)
+
+'从字符串左边提出子串,对循环生成的地址字符串操作
+Left(str,len)
+'判断是否是数字
+IsNumeric(String)
+
+'选中方法名，按F1，可以看文档
+'打开粘贴模式
+Application.CutCopyMode = true/false
+
+'Now()得到当前时间
+Format(Now(), "ymdhms")
+
+' 多个区域合并 用于单元格连接，Rnage可以完成多区域引用，但是文本地址有256长度限制
+Application.Union
+
+'判断是否对象存在
+Is Nothing
+
+'行列转置
+Application.Transpose(arry)
